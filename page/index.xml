@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Neetz World</title>
+    <link>https://neetabirajdar.github.io/page/</link>
+    <description>Recent content in Pages on Neetz World</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://neetabirajdar.github.io/page/about/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://neetabirajdar.github.io/page/about/</guid>
+      <description>Hello Everyone!!
+I am Neeta Birajdar. I love having fun and learning new things. I am professionally a Quality Assurance Automation Engineer who is super passionate about the Testing World and has fun breaking applications. 😈
+My colleagues describe me as a well-organized and detail-oriented person professionally. My friends say that I am fun to be around. 😀
+I believe that life is limited, so Try New Things and Do What You Like The Most!</description>
+    </item>
+    
+  </channel>
+</rss>
