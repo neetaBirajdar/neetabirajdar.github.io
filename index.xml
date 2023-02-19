@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home of Katheryn Fox on Neetz World</title>
+    <title>Neeta&#39;s World on Neetz World</title>
     <link>https://neetabirajdar.github.io/</link>
-    <description>Recent content in Home of Katheryn Fox on Neetz World</description>
+    <description>Recent content in Neeta&#39;s World on Neetz World</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MQTT with example</title>
       <link>https://neetabirajdar.github.io/blog/tech_mqtt/</link>
