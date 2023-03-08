@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Docker with basic examples</title>
+      <link>https://neetabirajdar.github.io/blog/docker_basic/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://neetabirajdar.github.io/blog/docker_basic/</guid>
+      <description>What is Docker ? Docker :
+It is a open platform to deliver your application faster to production. It helps in developing, running, testing, shipping the same environment without worrying about the host infrastructure. Advantages: Suitable for progressive deployment Dynamic workload management and scaling Cost efficient as compared to VMs(Virtual Machines) Open platform to use and to contribute Environment isolation Easy to share Components of Docker Docker Daemon: Listens to all the Docker API requests coming in the form of commands.</description>
+    </item>
+    
+    <item>
       <title>MQTT with example</title>
       <link>https://neetabirajdar.github.io/blog/tech_mqtt/</link>
       <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
