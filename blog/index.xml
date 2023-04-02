@@ -5,7 +5,17 @@
     <link>https://neetabirajdar.github.io/blog/</link>
     <description>Recent content in Blog on Neetz World</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Report With Pytest</title>
+      <link>https://neetabirajdar.github.io/blog/tech_pytest_report/</link>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://neetabirajdar.github.io/blog/tech_pytest_report/</guid>
+      <description>What is Test Report? Test reporting is always important part of testing. It provides an overview of which testcases are working, which ones are failing and details like what happened if logged or printed.
+Calculator Example: Use the following example for test reporting: Calculator App: https://github.com/neetaBirajdar/test_reporting Test Report with Pytest pytest is a very well known testing framework used in python test world. There are multiple options for reporting that can be used along with Pytest to make the results easy to read and understand.</description>
+    </item>
+    
     <item>
       <title>Docker with basic examples</title>
       <link>https://neetabirajdar.github.io/blog/docker_basic/</link>
