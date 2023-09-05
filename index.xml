@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Lean Startup Way</title>
+      <link>https://neetabirajdar.github.io/blog/startup_lean_canvas/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://neetabirajdar.github.io/blog/startup_lean_canvas/</guid>
+      <description>My learnings from Lean Startup Bootcamp: I heard about the Lean Startup concept a few times since I have been on this new journey of entrepreneurship. Today was the day when I had my first session as the part of this journey which was on Lean Startup. It was interesting to see how the things are when you just read them and actually implement them on your idea with team. It was an interesting session where I learned about Lean Startup Methods and Principles, Why most Startups fails?</description>
+    </item>
+    
+    <item>
       <title>Colors in German</title>
       <link>https://neetabirajdar.github.io/blog/german_colors/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
@@ -96,7 +105,7 @@ It is a standard messaging protocal for IoT(Internet of Things) sector. This was
       
       <guid>https://neetabirajdar.github.io/page/about/</guid>
       <description>Hello Everyone!!
-I am Neeta Birajdar. I love having fun and learning new things. I am professionally a Quality Assurance Automation Engineer who is super passionate about the Testing World and has fun breaking applications. 😈
+I am Neeta. My friends call me Tani. I love having fun and learning new things. I am professionally a Software Engineer who is super passionate about the Testing World and has fun breaking applications. 😈
 My colleagues describe me as a well-organized and detail-oriented person professionally. My friends say that I am fun to be around. 😀
 I believe that life is limited, so Try New Things and Do What You Like The Most!</description>
     </item>
