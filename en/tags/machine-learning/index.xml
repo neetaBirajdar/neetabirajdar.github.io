@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Neetz World</title>
+    <link>http://localhost:1313/en/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Neetz World</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning basics</title>
+      <link>http://localhost:1313/en/blog/tech_machine_learning/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/blog/tech_machine_learning/</guid>
+      <description>&lt;p&gt;We have heard about Artificial Intelligence, Machine Learning and Deep Learning topics a lot. Everyone is talking about these topics. But what are they, how are they different from each other and when to use what while talking are important questions to answer.&lt;/p&gt;&#xA;&lt;p&gt;I am starting on these topic, so I thought it would be amazing to share with you about what all I learned and it may help you too.&#xA;So, Let start with what comes inside what.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Startup Learnings on Neetz World</title>
-    <link>https://neetabirajdar.github.io/tags/startup-learnings/</link>
-    <description>Recent content in Startup Learnings on Neetz World</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://neetabirajdar.github.io/tags/startup-learnings/index.xml" rel="self" type="application/rss+xml" />
+    <title>Startup Learnings on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/startup-learnings/</link>
+    <description>Recent content in Startup Learnings on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/startup-learnings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lean Startup Way</title>
-      <link>https://neetabirajdar.github.io/blog/startup_lean_canvas/</link>
+      <link>http://localhost:1313/blog/startup_lean_canvas/</link>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://neetabirajdar.github.io/blog/startup_lean_canvas/</guid>
-      <description>My learnings from Lean Startup Bootcamp: I heard about the Lean Startup concept a few times since I have been on this new journey of entrepreneurship. Today was the day when I had my first session as the part of this journey which was on Lean Startup. It was interesting to see how the things are when you just read them and actually implement them on your idea with team. It was an interesting session where I learned about Lean Startup Methods and Principles, Why most Startups fails?</description>
+      <guid>http://localhost:1313/blog/startup_lean_canvas/</guid>
+      <description>&lt;h2 id=&#34;my-learnings-from-lean-startup-bootcamp&#34;&gt;My learnings from Lean Startup Bootcamp:&lt;/h2&gt;&#xA;&lt;p&gt;I heard about the &lt;code&gt;Lean Startup&lt;/code&gt; concept a few times since I have been on this new journey of entrepreneurship. Today was the day when I had my first session as the part of this journey which was on Lean Startup. It was interesting to see how the things are when you just read them and actually implement them on your idea with team.&#xA;It was an interesting session where I learned about &lt;em&gt;Lean Startup Methods and Principles, Why most Startups fails?, What to focus on initially when starting with a startup idea? and Lean Canvas&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+  MQTT with example - Neetz World
+  </title>
+  <meta name="description" content="Understanding MQTT and try an example" />
+  <meta name="author" content="Neeta Birajdar" />
+  <meta name="generator" content="Hugo 0.139.3">
+  <link rel="stylesheet" href="/css/styles.css" />
+  
+  
+
+  <meta property="og:url" content="http://localhost:1313/en/blog/tech_mqtt/">
+  <meta property="og:site_name" content="Neetz World">
+  <meta property="og:title" content="MQTT with example">
+  <meta property="og:description" content="Understanding MQTT and try an example">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-02-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-02-19T00:00:00+00:00">
+    <meta property="article:tag" content="Technical Topic">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MQTT with example">
+  <meta name="twitter:description" content="Understanding MQTT and try an example">
+
+  
+  <meta itemprop="name" content="MQTT with example">
+  <meta itemprop="description" content="Understanding MQTT and try an example">
+  <meta itemprop="datePublished" content="2023-02-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-02-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="631">
+  <meta itemprop="keywords" content="Technical Topic">
+
+  
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
+  <a href="http://localhost:1313/en/" class="capitalize font-extrabold text-2xl">
+    
+    <img src="/images/neet_avatar.png" alt="Neetz World" class="h-8 max-w-full" />
+    
+  </a>
+  <button class="mobile-menu-button md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
+  </button>
+  <ul class="mobile-menu absolute z-10 px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
+
+    
+    <li><a href="/en/blog">Blog</a></li>
+    
+    <li><a href="/en/page/about/">About</a></li>
+    
+    <li><a href="/en/tags">Tags</a></li>
+    
+    <li><a href="/en/blog/tech_mqtt/">Top Post</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header>
+<main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="/images/mqtt_header.png" class="rounded-lg shadow-sm w-full object-contain" />
+    
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    February 19, 2023
+  
+
+
+    </div>
+    
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">MQTT with example</h1>
+    
+    <h5 class="text-sm flex items-center flex-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    February 19, 2023
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      3&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      631&nbsp;words
+      
+        
+      
+    </h5>
+    
+
+    
+
+    <h2 id="what-is-mqtt-">What is MQTT ?</h2>
+<p><strong>MQTT</strong> : <em><strong>Message Queue Telemetry Transport</strong></em></p>
+<ul>
+<li>It is a <em>standard messaging protocal</em> for <em>IoT(Internet of Things)</em> sector.</li>
+<li>This was especially built for Machine-To-Machine(<em>M2M</em>) communication.</li>
+<li>It is a simple, lightwieght but effective way to transport messages across a lot of devices with minimal bandwidth using <em>publisher/subscriber</em> model.</li>
+</ul>
+<hr>
+<h2 id="components-of-mqtt">Components of MQTT:</h2>
+<p><img alt="MQTT Architecture" src="/images/mqtt_arch.jpg"></p>
+<ol>
+<li>
+<p><em><strong>MQTT Broker/Server</strong></em>:
+It is server which routes published data to the subscriber who subscribed to that topic.</p>
+</li>
+<li>
+<p><em><strong>MQTT Clients</strong></em>:
+The devices which transport data/messages via broker and act as publisher or subscriber.</p>
+</li>
+<li>
+<p><em><strong>Topic</strong></em>:
+This is the special channel/tunnel to pass the messages between a Publisher and its Subscriber.</p>
+</li>
+<li>
+<p><em><strong>QoS (Quality of Service)</strong></em>:
+This parameter is to ensure the reliability of the message sent in between Publisher and Subscriber. There are 3 values of this:</p>
+<ul>
+<li>Qos=0 -&gt; at most once</li>
+<li>Qos=1 -&gt; at least once</li>
+<li>Qos=2 -&gt; exactly once</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="why-mqtt-">Why MQTT ?</h2>
+<ul>
+<li>
+<p><em><strong>Lightweight but Effective</strong></em>:
+Small devices like a temperature sensor or motion sensor can use this for transmitting their data with minimal network bandwidth and resource utility.</p>
+</li>
+<li>
+<p><em><strong>BiDirectional Communitcation with Multiple Devices</strong></em>:
+MQTT uses publisher-subscriber model which makes it easy to send messages to group of devices at the same time and vise versa.</p>
+</li>
+<li>
+<p><em><strong>Reliable Message Delivery</strong></em>:
+The reliability of message delivery can be controlled by the QoS parameter given by MQTT.</p>
+</li>
+</ul>
+<hr>
+<h2 id="example-in-python">Example in Python:</h2>
+<p>This is the most basic example to see how the whole publisher-subscriber model works with a broker in between.</p>
+<p><strong>Note</strong>:
+<em>There are many tools and libraries available for building Pub/Sub clients. Also, there are a lot of open source Brokers avaiable as listed in this:  <a href="https://mqtt.org/software" target="_blank" rel="noopener">https://mqtt.org/software</a>
+.</em></p>
+<h3 id="code-github-link-">Code GitHub link :</h3>
+<p><a href="https://github.com/neetaBirajdar/mqtt_project" target="_blank" rel="noopener">https://github.com/neetaBirajdar/mqtt_project</a>
+</p>
+<h3 id="steps">Steps:</h3>
+<ol>
+<li>Create Publisher and Subscriber</li>
+<li>Run the Broker</li>
+<li>Subscribe to the topic via broker</li>
+<li>Publish on the same topic via broker</li>
+<li>Check the message recieved by Subscriber which is sent by Publisher</li>
+</ol>
+<p><img alt="MQTT example" src="/images/example_mqtt.jpg"></p>
+<h3 id="mqtt-client-and-broker-used-here">MQTT Client and Broker used here:</h3>
+<ul>
+<li>MQTT Clients =&gt; <em>Paho Client</em> (<a href="https://github.com/eclipse/paho.mqtt.python" target="_blank" rel="noopener">https://github.com/eclipse/paho.mqtt.python</a>
+)</li>
+<li>MQTT Broker =&gt; <em>Mosquitto</em> (<a href="https://mosquitto.org" target="_blank" rel="noopener">https://mosquitto.org</a>
+)</li>
+</ul>
+<h3 id="installation-of-the-softwares-required">Installation of the softwares required:</h3>
+<h4 id="a-install-paho">a. Install paho:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>pip install paho-mqtt
+</span></span></code></pre></div><h4 id="b-install-mosquitto">b. Install mosquitto:</h4>
+<p>Install as per OS on the machine you are using with the options given here : <a href="https://mosquitto.org/download/" target="_blank" rel="noopener">https://mosquitto.org/download/</a>
+</p>
+<h4 id="c-define-configuration">c. Define configuration:</h4>
+<p>Define the baisc configuration to establish connection and send/recieve the data.</p>
+<pre tabindex="0"><code># Add to config.py
+
+HOSTNAME=&#34;localhost&#34;
+PORT=1883
+TOPIC=&#34;test/topic&#34;
+</code></pre><p><strong>Note</strong>: You can give any Topic name instead of <code>test/topic</code> but make sure you have the same port and hostname if you are running this locally.</p>
+<h4 id="d-create-publisher">d. Create Publisher:</h4>
+<p>This pubslisher is created using the method <code>publish</code> inside <code>paho.mqtt</code>. It takes the basic configuration which we defined before. Also, here we are publishing the message : &ldquo;test_message&rdquo;(you can give any message).</p>
+<pre tabindex="0"><code># Add to mqtt_publisher.py
+
+import paho.mqtt.publish as publish
+from config import TOPIC, HOSTNAME, PORT
+
+publish.single(
+                topic=TOPIC,
+                hostname=HOSTNAME,
+                port=PORT,
+                payload=&#34;test_message&#34;
+              )
+</code></pre><h4 id="e-create-subscriber">e. Create Subscriber:</h4>
+<p>Similarly, use <code>subscribe</code> from <code>paho.mqtt</code> to create a basic subcriber who is listening to the defined configuration.<em>client_id</em> can be anything as you are on your local machine.
+<strong>Important</strong>: Subscription to a correct <em>topic</em> is necessary to get the expected data.</p>
+<pre tabindex="0"><code># Add to mqtt_subscriber.py
+
+import paho.mqtt.subscribe as susbcribe
+from config import TOPIC, HOSTNAME, PORT
+
+message  = susbcribe.simple(
+                            topics=TOPIC,
+                            hostname=HOSTNAME,
+                            port=PORT,
+                            client_id=&#34;test_client&#34;,
+                            qos=0
+                        )
+
+print(f&#34;\nTopic: {message.topic}&#34;)
+print(f&#34;\nMessage: {message.payload}&#34;)
+</code></pre><h4 id="f-run-these-in-multiple-terminals">f. Run these in multiple terminals:</h4>
+<ol>
+<li><em><strong>First terminal</strong></em>-&gt; Run your Broker using :</li>
+</ol>
+<pre tabindex="0"><code>mosquitto
+</code></pre><p>It should look like this :
+<img alt="MQTT broker Connection" src="/images/broker.png"></p>
+<ol start="2">
+<li><em><strong>Second terminal</strong></em> -&gt; Run your subscriber using python:</li>
+</ol>
+<pre tabindex="0"><code>python mqtt_subscriber.py
+</code></pre><p>Once you do this, you will see the <code>test_client</code> connection is established with Broker within <em><strong>first terminal</strong></em> as shown below:
+<img alt="MQTT broker with sub connection" src="/images/broker_with_sub.png"></p>
+<ol start="3">
+<li><em><strong>Third terminal</strong></em> -&gt; Run the publisher and publish the data:</li>
+</ol>
+<pre tabindex="0"><code>python mqtt_publisher.py
+</code></pre><p>On <em><strong>first terminal</strong></em>, you will see a new connection:</p>
+<p><img alt="MQTT broker with pub-sub connection" src="/images/broker_with_pub.png"></p>
+<p>And on <em><strong>second terminal</strong></em>, you will see the data published by the publisher which we ran using python:</p>
+<p><img alt="MQTT sub message" src="/images/sub_with_msg.png"></p>
+<p>Finally, the loop is completed.</p>
+<p><em><strong>Congratulation !!</strong></em></p>
+<p>You have create an <strong>end-to-end flow for Publisher-Subscriber model via Broker.</strong></p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-4 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">To have some coding fun and learning new things!</p>
+    </div>
+
+    <ul class="flex justify-center gap-x-3 flex-wrap gap-y-2">
+      
+    </ul>
+  </div>
+</div>
+
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2024 - Neet · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="http://localhost:1313/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const darkStorage = localStorage.getItem('darkmode');
+  const isBrowserDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (!darkStorage && isBrowserDark) {
+    document.documentElement.classList.add('dark');
+  }
+
+  if (darkStorage && darkStorage === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.mobile-menu')
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+  if(mobileMenu && mobileMenuButton){
+    mobileMenuButton.addEventListener('click', toggleMenu)
+  }
+</script>
+</body>
+</html>
