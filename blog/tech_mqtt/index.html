@@ -3,44 +3,54 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="icon" href="/favicon.svg">
+  <link rel="icon" href="../../favicon.svg">
 
   <title>
   MQTT with example - Neetz World
   </title>
   <meta name="description" content="Understanding MQTT and try an example" />
   <meta name="author" content="Neeta Birajdar" />
-  <meta name="generator" content="Hugo 0.111.2"><link
+  <meta name="generator" content="Hugo 0.139.3">
+  <link
     rel="stylesheet"
-    href="https://neetabirajdar.github.io/css/styles.min.f034a7cf36b8e48f2238f4bc52e2465db0f714885a98321975597221ae54f699.css"
-    integrity="sha256-8DSnzza45I8iOPS8UuJGXbD3FIhamDIZdVlyIa5U9pk="
+    href="https://neetabirajdar.github.io/css/styles.css"
+    integrity=""
   />
+
+
   
   
 
-  <meta property="og:title" content="MQTT with example" />
-<meta property="og:description" content="Understanding MQTT and try an example" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://neetabirajdar.github.io/blog/tech_mqtt/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-02-19T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-02-19T00:00:00+00:00" />
+  <meta property="og:url" content="https://neetabirajdar.github.io/blog/tech_mqtt/">
+  <meta property="og:site_name" content="Neetz World">
+  <meta property="og:title" content="MQTT with example">
+  <meta property="og:description" content="Understanding MQTT and try an example">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-02-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-02-19T00:00:00+00:00">
+    <meta property="article:tag" content="Technical Topic">
 
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="MQTT with example"/>
-<meta name="twitter:description" content="Understanding MQTT and try an example"/>
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MQTT with example">
+  <meta name="twitter:description" content="Understanding MQTT and try an example">
 
+  
   <meta itemprop="name" content="MQTT with example">
-<meta itemprop="description" content="Understanding MQTT and try an example"><meta itemprop="datePublished" content="2023-02-19T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-02-19T00:00:00+00:00" />
-<meta itemprop="wordCount" content="631">
-<meta itemprop="keywords" content="Technical Topic," />
+  <meta itemprop="description" content="Understanding MQTT and try an example">
+  <meta itemprop="datePublished" content="2023-02-19T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2023-02-19T00:00:00+00:00">
+  <meta itemprop="wordCount" content="631">
+  <meta itemprop="keywords" content="Technical Topic">
 
   
 </head>
 <body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
   <a href="https://neetabirajdar.github.io/" class="capitalize font-extrabold text-2xl">
     
-    <img src="/images/neet_avatar.png" alt="Neetz World" class="h-8 max-w-full" />
+    <img src="../../images/neet_avatar.png" alt="Neetz World" class="h-8 max-w-full" />
     
   </a>
   <button class="mobile-menu-button md:hidden">
@@ -53,13 +63,13 @@
   <ul class="mobile-menu absolute z-10 px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
 
     
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="../../blog">Blog</a></li>
     
-    <li><a href="/page/about/">About</a></li>
+    <li><a href="../../page/about/">About</a></li>
     
-    <li><a href="/tags">Tags</a></li>
+    <li><a href="../../tags">Tags</a></li>
     
-    <li><a href="/blog/tech_mqtt/">Top Post</a></li>
+    <li><a href="../../blog/tech_mqtt/">Top Post</a></li>
     
 
     
@@ -104,7 +114,7 @@
 
   
   <div class="relative max-w-5xl mx-auto px-4">
-    <img src="/images/mqtt_header.png" class="rounded-lg shadow-sm w-full object-contain" />
+    <img src="../../images/mqtt_header.png" class="rounded-lg shadow-sm w-full object-contain" />
     
     <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
       
@@ -171,7 +181,7 @@
 </ul>
 <hr>
 <h2 id="components-of-mqtt">Components of MQTT:</h2>
-<p><img src="/images/mqtt_arch.jpg" alt="MQTT Architecture"></p>
+<p><img alt="MQTT Architecture" src="../../images/mqtt_arch.jpg"></p>
 <ol>
 <li>
 <p><em><strong>MQTT Broker/Server</strong></em>:
@@ -228,7 +238,7 @@ The reliability of message delivery can be controlled by the QoS parameter given
 <li>Publish on the same topic via broker</li>
 <li>Check the message recieved by Subscriber which is sent by Publisher</li>
 </ol>
-<p><img src="/images/example_mqtt.jpg" alt="MQTT example"></p>
+<p><img alt="MQTT example" src="../../images/example_mqtt.jpg"></p>
 <h3 id="mqtt-client-and-broker-used-here">MQTT Client and Broker used here:</h3>
 <ul>
 <li>MQTT Clients =&gt; <em>Paho Client</em> (<a href="https://github.com/eclipse/paho.mqtt.python" target="_blank" rel="noopener">https://github.com/eclipse/paho.mqtt.python</a>
@@ -287,21 +297,21 @@ print(f&#34;\nMessage: {message.payload}&#34;)
 </ol>
 <pre tabindex="0"><code>mosquitto
 </code></pre><p>It should look like this :
-<img src="/images/broker.png" alt="MQTT broker Connection"></p>
+<img alt="MQTT broker Connection" src="../../images/broker.png"></p>
 <ol start="2">
 <li><em><strong>Second terminal</strong></em> -&gt; Run your subscriber using python:</li>
 </ol>
 <pre tabindex="0"><code>python mqtt_subscriber.py
 </code></pre><p>Once you do this, you will see the <code>test_client</code> connection is established with Broker within <em><strong>first terminal</strong></em> as shown below:
-<img src="/images/broker_with_sub.png" alt="MQTT broker with sub connection"></p>
+<img alt="MQTT broker with sub connection" src="../../images/broker_with_sub.png"></p>
 <ol start="3">
 <li><em><strong>Third terminal</strong></em> -&gt; Run the publisher and publish the data:</li>
 </ol>
 <pre tabindex="0"><code>python mqtt_publisher.py
 </code></pre><p>On <em><strong>first terminal</strong></em>, you will see a new connection:</p>
-<p><img src="/images/broker_with_pub.png" alt="MQTT broker with pub-sub connection"></p>
+<p><img alt="MQTT broker with pub-sub connection" src="../../images/broker_with_pub.png"></p>
 <p>And on <em><strong>second terminal</strong></em>, you will see the data published by the publisher which we ran using python:</p>
-<p><img src="/images/sub_with_msg.png" alt="MQTT sub message"></p>
+<p><img alt="MQTT sub message" src="../../images/sub_with_msg.png"></p>
 <p>Finally, the loop is completed.</p>
 <p><em><strong>Congratulation !!</strong></em></p>
 <p>You have create an <strong>end-to-end flow for Publisher-Subscriber model via Broker.</strong></p>
@@ -314,6 +324,35 @@ print(f&#34;\nMessage: {message.payload}&#34;)
     </div>
     <ul class="flex justify-center gap-4">
       
+      
+      <li>
+        <a
+          href="https://linkedin.com/in/neetabirajdar"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
+      </li>
       
       
       
@@ -348,34 +387,6 @@ print(f&#34;\nMessage: {message.payload}&#34;)
       
       
       
-      
-      <li>
-        <a
-          href="https://www.instagram.com/taniclicks2"
-          target="_blank"
-          rel="noopener"
-          aria-label="Instagram"
-          class="p-2 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-brand-instagram"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
-            <circle cx="12" cy="12" r="9" />
-            <path d="M10 9l5 3l-5 3z" />
-          </svg>
-        </a>
-      </li>
       
       
     </ul>
