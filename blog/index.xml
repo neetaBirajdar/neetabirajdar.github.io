@@ -6,8 +6,15 @@
     <description>Recent content in Blog on Neetz World</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://neetabirajdar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning basics</title>
+      <link>https://neetabirajdar.github.io/blog/tech_machine_learning/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://neetabirajdar.github.io/blog/tech_machine_learning/</guid>
+      <description>&lt;p&gt;We have heard about Artificial Intelligence, Machine Learning and Deep Learning topics a lot. Everyone is talking about these topics. Machine learning seemed very interesting topic to get into, I know I am late already but &amp;ldquo;Better late than never 😁&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I am starting on these topic, so I thought it would be amazing to share with you, my learnings and hope that will help you too.&#xA;So, Let start with what comes inside what.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Sales Learnings for Startup</title>
       <link>https://neetabirajdar.github.io/blog/startup_sales/</link>
