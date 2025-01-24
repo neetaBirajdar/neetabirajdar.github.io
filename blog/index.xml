@@ -6,8 +6,22 @@
     <description>Recent content in Blog on Neetz World</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://neetabirajdar.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Application with ML</title>
+      <link>https://neetabirajdar.github.io/blog/tech_ml_application/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://neetabirajdar.github.io/blog/tech_ml_application/</guid>
+      <description>&lt;p&gt;Here is a video example:&lt;br&gt;&#xA;&lt;video controls width=&#34;800&#34;&gt;&lt;br&gt;&#xA;&lt;source src=&#34;../videos/ml_video.mp4&#34; type=&#34;video/mp4&#34;&gt;&lt;br&gt;&#xA;Your browser does not support the video tag.&lt;br&gt;&#xA;&lt;/video&gt;&lt;/p&gt;&#xA;&lt;p&gt;I created a basic application with &lt;em&gt;&lt;strong&gt;two ways to detect numbers from 0-9&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You can either click on a number, and the image is detected using a deep learning algorithm.&lt;/li&gt;&#xA;&lt;li&gt;You can draw a number, and it should detect the number.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The dataset for training and testing numbers was assembled by the &lt;em&gt;National Institute of Standards and Technology&lt;/em&gt; (the NIST in MNIST) in the 1980s. It consists of 60,000 training images and 10,000 test images. Instead of using test images, I am using my input from either the clicked number or the drawn number.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deep Learning with example</title>
+      <link>https://neetabirajdar.github.io/blog/tech_ml_deep_learning/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://neetabirajdar.github.io/blog/tech_ml_deep_learning/</guid>
+      <description>&lt;h2 id=&#34;learning-in-machine-learning-context&#34;&gt;Learning (In machine learning context):&lt;/h2&gt;&#xA;&lt;p&gt;Describes an automatic search process for data transformations that produce useful &lt;em&gt;representations&lt;/em&gt; of&#xA;some data, guided by some feedback signal.&lt;/p&gt;&#xA;&lt;h2 id=&#34;machine-learning&#34;&gt;Machine Learning:&lt;/h2&gt;&#xA;&lt;p&gt;Machine Learning is searching for &lt;em&gt;useful representations&lt;/em&gt; and&#xA;&lt;em&gt;rules&lt;/em&gt; over some input data, within a &lt;em&gt;predefined space&lt;/em&gt; of possibilities, using guidance from a&#xA;&lt;em&gt;feedback signal&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;deep-learning&#34;&gt;Deep Learning:&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Deep&lt;/em&gt;&lt;/strong&gt; in deep learning represents &amp;lsquo;how many layers contribute to a model of the data&amp;rsquo;. So, &lt;em&gt;deep learning&lt;/em&gt; is a new take on learning&#xA;&lt;em&gt;representations&lt;/em&gt; from data that emphasizes learning &lt;em&gt;successive layers&lt;/em&gt; of increasingly&#xA;meaningful representations. It is also called &lt;em&gt;layered representation learning or hierarchical representation learning&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Machine Learning basics</title>
       <link>https://neetabirajdar.github.io/blog/tech_machine_learning/</link>
